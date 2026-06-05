@@ -383,6 +383,10 @@ p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.related-guides {
+  margin-top: 16px;
+}
+
 .card,
 .step-card,
 .faq-item,
