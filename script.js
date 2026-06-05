@@ -43,4 +43,72 @@ document.addEventListener("DOMContentLoaded", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
+
+  if (document.body.classList.contains("windows-guide")) {
+    var guideImages = document.querySelectorAll(".windows-guide .step-media img");
+
+    if (guideImages.length) {
+      var lightbox = document.createElement("div");
+      var lightboxContent = document.createElement("div");
+      var lightboxImage = document.createElement("img");
+      var closeButton = document.createElement("button");
+
+      lightbox.className = "image-lightbox";
+      lightbox.setAttribute("role", "dialog");
+      lightbox.setAttribute("aria-modal", "true");
+      lightbox.setAttribute("aria-label", "Просмотр изображения");
+
+      lightboxContent.className = "image-lightbox-content";
+      closeButton.className = "image-lightbox-close";
+      closeButton.type = "button";
+      closeButton.setAttribute("aria-label", "Закрыть изображение");
+      closeButton.textContent = "×";
+
+      lightboxContent.appendChild(lightboxImage);
+      lightboxContent.appendChild(closeButton);
+      lightbox.appendChild(lightboxContent);
+      document.body.appendChild(lightbox);
+
+      var closeLightbox = function () {
+        lightbox.classList.remove("open");
+        document.body.classList.remove("lightbox-open");
+        lightboxImage.removeAttribute("src");
+        lightboxImage.removeAttribute("alt");
+      };
+
+      guideImages.forEach(function (image) {
+        image.setAttribute("tabindex", "0");
+        image.setAttribute("role", "button");
+
+        var openLightbox = function () {
+          lightboxImage.src = image.currentSrc || image.src;
+          lightboxImage.alt = image.alt || "";
+          lightbox.classList.add("open");
+          document.body.classList.add("lightbox-open");
+          closeButton.focus();
+        };
+
+        image.addEventListener("click", openLightbox);
+        image.addEventListener("keydown", function (event) {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openLightbox();
+          }
+        });
+      });
+
+      closeButton.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", function (event) {
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && lightbox.classList.contains("open")) {
+          closeLightbox();
+        }
+      });
+    }
+  }
 });
