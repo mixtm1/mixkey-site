@@ -577,10 +577,23 @@ p {
 .step-media img {
   display: block;
   width: 100%;
-  height: 100%;
+  max-width: none;
+  height: auto;
   min-height: 220px;
   border-radius: var(--radius);
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.windows-guide .step-card {
+  grid-template-columns: 1fr;
+}
+
+.windows-guide .step-media {
+  width: 100%;
+}
+
+.windows-guide .step-media img {
+  min-height: 0;
 }
 
 .step-media span {
