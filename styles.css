@@ -579,9 +579,8 @@ p {
   width: 100%;
   max-width: none;
   height: auto;
-  min-height: 220px;
   border-radius: var(--radius);
-  object-fit: contain;
+  image-rendering: auto;
 }
 
 .windows-guide .step-card {
@@ -600,7 +599,6 @@ p {
     0 22px 60px rgba(0, 0, 0, 0.34),
     0 0 34px rgba(142, 229, 209, 0.12);
   cursor: zoom-in;
-  transform: perspective(1100px) translateY(0) rotateX(0);
   transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
 }
 
@@ -609,11 +607,13 @@ p {
   box-shadow:
     0 30px 78px rgba(0, 0, 0, 0.42),
     0 0 46px rgba(142, 229, 209, 0.18);
-  transform: perspective(1100px) translateY(-4px) rotateX(1deg);
+  transform: translateY(-3px);
 }
 
 .windows-guide .step-media img {
-  min-height: 0;
+  width: 100%;
+  max-width: none;
+  height: auto;
   cursor: zoom-in;
 }
 
