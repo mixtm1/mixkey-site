@@ -387,6 +387,30 @@ p {
   margin-top: 16px;
 }
 
+.related-guides .card {
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.related-guide-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 760;
+}
+
+.related-guide-action::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.related-guides .card:hover .related-guide-action::after {
+  transform: translateX(4px);
+}
+
 .card,
 .step-card,
 .faq-item,
@@ -598,12 +622,15 @@ p {
 
 .windows-guide .step-media {
   width: 100%;
+  max-width: 1536px;
+  margin-right: auto;
+  margin-left: auto;
   border: 1px solid rgba(142, 229, 209, 0.28);
   box-shadow:
     0 22px 60px rgba(0, 0, 0, 0.34),
     0 0 34px rgba(142, 229, 209, 0.12);
   cursor: zoom-in;
-  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+  transition: border-color 0.22s ease, box-shadow 0.22s ease;
 }
 
 .windows-guide .step-media:hover {
@@ -611,13 +638,13 @@ p {
   box-shadow:
     0 30px 78px rgba(0, 0, 0, 0.42),
     0 0 46px rgba(142, 229, 209, 0.18);
-  transform: translateY(-3px);
 }
 
 .windows-guide .step-media img {
   width: 100%;
-  max-width: none;
+  max-width: 1536px;
   height: auto;
+  object-fit: contain;
   cursor: zoom-in;
 }
 
