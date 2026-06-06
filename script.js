@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  if (document.body.classList.contains("windows-guide")) {
-    var guideImages = document.querySelectorAll(".windows-guide .step-media img");
+  if (document.body.classList.contains("windows-guide") || document.body.classList.contains("office-guide")) {
+    var guideImages = document.querySelectorAll(".windows-guide .step-media img, .office-guide .step-media img");
 
     if (guideImages.length) {
       var lightbox = document.createElement("div");

@@ -667,18 +667,20 @@ p {
   image-rendering: auto;
 }
 
-.windows-guide .step-card {
+.windows-guide .step-card,
+.office-guide .step-card {
   grid-template-columns: 1fr;
 }
 
-.windows-guide .step-media-group {
+.windows-guide .step-media-group,
+.office-guide .step-media-group {
   display: grid;
   gap: 16px;
 }
 
-.windows-guide .step-media {
+.windows-guide .step-media,
+.office-guide .step-media {
   width: 100%;
-  max-width: 1536px;
   margin-right: auto;
   margin-left: auto;
   border: 1px solid rgba(142, 229, 209, 0.28);
@@ -689,19 +691,36 @@ p {
   transition: border-color 0.22s ease, box-shadow 0.22s ease;
 }
 
-.windows-guide .step-media:hover {
+.windows-guide .step-media {
+  max-width: 1536px;
+}
+
+.office-guide .step-media {
+  max-width: 1672px;
+}
+
+.windows-guide .step-media:hover,
+.office-guide .step-media:hover {
   border-color: rgba(142, 229, 209, 0.5);
   box-shadow:
     0 30px 78px rgba(0, 0, 0, 0.42),
     0 0 46px rgba(142, 229, 209, 0.18);
 }
 
-.windows-guide .step-media img {
+.windows-guide .step-media img,
+.office-guide .step-media img {
   width: 100%;
-  max-width: 1536px;
   height: auto;
   object-fit: contain;
   cursor: zoom-in;
+}
+
+.windows-guide .step-media img {
+  max-width: 1536px;
+}
+
+.office-guide .step-media img {
+  max-width: 1672px;
 }
 
 .step-media span {
