@@ -45,6 +45,12 @@
     .downloads-page .mirror-card {
       min-height: 0;
     }
+
+    .downloads-page .button.inactive {
+      cursor: default;
+      opacity: 0.58;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body class="downloads-page">
@@ -77,8 +83,8 @@
         <article class="panel">
           <h2>Выберите, что нужно сделать</h2>
           <div class="grid three related-guides download-quick">
-            <a class="card" href="#windows-downloads"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.3 10.5 4v7.2H3V5.3Zm0 8h7.5V20L3 18.7v-5.4ZM12 3.8 21 2.2v9H12V3.8Zm0 9.5h9v8.5l-9-1.5v-7Z"/></svg></span><h3>Скачать Windows</h3></div><p>Официальная загрузка Windows 11 и запасной дистрибутив.</p><span class="related-guide-action">Перейти к Windows</span></a>
-            <a class="card" href="#office-downloads"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8.2L19 7.8V21H6V3Zm7 1.9V9h4.1L13 4.9ZM8.4 11.2v2.1h8.2v-2.1H8.4Zm0 4v2.1h6.4v-2.1H8.4Z"/></svg></span><h3>Скачать Office</h3></div><p>Основная ссылка Office 2024 Pro Plus LTSC и компактные зеркала.</p><span class="related-guide-action">Перейти к Office</span></a>
+            <a class="card" href="#windows-downloads"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.3 10.5 4v7.2H3V5.3Zm0 8h7.5V20L3 18.7v-5.4ZM12 3.8 21 2.2v9H12V3.8Zm0 9.5h9v8.5l-9-1.5v-7Z"/></svg></span><h3>Скачать Windows</h3></div><p>Windows 10 и Windows 11 для редакций Home и Pro.</p><span class="related-guide-action">Перейти к Windows</span></a>
+            <a class="card" href="#office-downloads"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8.2L19 7.8V21H6V3Zm7 1.9V9h4.1L13 4.9ZM8.4 11.2v2.1h8.2v-2.1H8.4Zm0 4v2.1h6.4v-2.1H8.4Z"/></svg></span><h3>Скачать Office</h3></div><p>Office 2019, 2021 и 2024 Pro Plus.</p><span class="related-guide-action">Перейти к Office</span></a>
             <a class="card" href="#office-removal"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9.4 3h5.2l.7 2H20v2.2H4V5h4.7l.7-2Zm-3.8 6h12.8l-.9 12H6.5L5.6 9Zm4.1 2.6.4 6.7h1.8l-.3-6.7H9.7Zm4.6 0-.3 6.7h1.8l.4-6.7h-1.9Z"/></svg></span><h3>Удалить старый Office</h3></div><p>Официальная инструкция Microsoft по удалению предыдущих версий Office.</p><span class="related-guide-action">Перейти к удалению</span></a>
           </div>
         </article>
@@ -92,16 +98,22 @@
         </article>
 
         <article class="panel" id="windows-downloads">
-          <h2>Windows 11</h2>
+          <h2>Windows</h2>
+          <p>Windows 10 Home и Pro используют один дистрибутив. Windows 11 Home и Pro также используют один дистрибутив, редакция выбирается при установке или активации ключом.</p>
           <div class="grid two related-guides">
-            <a class="card" href="https://www.microsoft.com/software-download/windows11" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.3 10.5 4v7.2H3V5.3Zm0 8h7.5V20L3 18.7v-5.4ZM12 3.8 21 2.2v9H12V3.8Zm0 9.5h9v8.5l-9-1.5v-7Z"/></svg></span><h3>Официальная загрузка Windows 11</h3></div><p>Официальная страница Microsoft для скачивания Windows 11 и создания установочной флешки.</p><span class="related-guide-action">Если ссылка не открывается в РФ, попробуйте VPN.</span></a>
-            <a class="card" href="https://disk.yandex.ru/d/Lj5q9uz94K9ggA" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a5.2 5.2 0 0 1 5.1 4.3A4.6 4.6 0 0 1 17.5 16h-3.1v-2.4h3.1a2.2 2.2 0 0 0 .2-4.4l-2-.2-.3-1.9A3.3 3.3 0 0 0 9 6.6l-.7 1.2-1.3.1A2.9 2.9 0 0 0 7.2 13h2.4v3H7.2a5.3 5.3 0 0 1-.5-10.6A5.6 5.6 0 0 1 12 3Zm1.2 11.6v4.1l1.7-1.7 1.5 1.5L12 23l-4.4-4.5L9.1 17l1.7 1.7v-4.1h2.4Z"/></svg></span><h3>Windows 11 Pro — запасной дистрибутив</h3></div><p>Запасная ссылка на установочный дистрибутив Windows 11 Pro.</p><span class="related-guide-action">Используйте, если официальная загрузка Microsoft недоступна.</span></a>
+            <a class="card" href="https://www.microsoft.com/software-download/windows10" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.3 10.5 4v7.2H3V5.3Zm0 8h7.5V20L3 18.7v-5.4ZM12 3.8 21 2.2v9H12V3.8Zm0 9.5h9v8.5l-9-1.5v-7Z"/></svg></span><h3>Windows 10 Home и Pro</h3></div><p>Официальная страница Microsoft для скачивания Windows 10 и создания установочной флешки.</p><span class="related-guide-action">Официальная ссылка Microsoft</span></a>
+            <div class="card mirror-card"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a5.2 5.2 0 0 1 5.1 4.3A4.6 4.6 0 0 1 17.5 16h-3.1v-2.4h3.1a2.2 2.2 0 0 0 .2-4.4l-2-.2-.3-1.9A3.3 3.3 0 0 0 9 6.6l-.7 1.2-1.3.1A2.9 2.9 0 0 0 7.2 13h2.4v3H7.2a5.3 5.3 0 0 1-.5-10.6A5.6 5.6 0 0 1 12 3Zm1.2 11.6v4.1l1.7-1.7 1.5 1.5L12 23l-4.4-4.5L9.1 17l1.7 1.7v-4.1h2.4Z"/></svg></span><h3>Windows 10 — зеркало MixKey</h3></div><p>Запасная ссылка на дистрибутив Windows 10 появится позже.</p><div class="actions"><span class="button inactive">Скоро будет доступно</span></div></div>
+            <a class="card" href="https://www.microsoft.com/software-download/windows11" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.3 10.5 4v7.2H3V5.3Zm0 8h7.5V20L3 18.7v-5.4ZM12 3.8 21 2.2v9H12V3.8Zm0 9.5h9v8.5l-9-1.5v-7Z"/></svg></span><h3>Windows 11 Home и Pro</h3></div><p>Официальная страница Microsoft для скачивания Windows 11 и создания установочной флешки.</p><span class="related-guide-action">Если ссылка не открывается в РФ, попробуйте VPN.</span></a>
+            <a class="card" href="https://disk.yandex.ru/d/Lj5q9uz94K9ggA" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a5.2 5.2 0 0 1 5.1 4.3A4.6 4.6 0 0 1 17.5 16h-3.1v-2.4h3.1a2.2 2.2 0 0 0 .2-4.4l-2-.2-.3-1.9A3.3 3.3 0 0 0 9 6.6l-.7 1.2-1.3.1A2.9 2.9 0 0 0 7.2 13h2.4v3H7.2a5.3 5.3 0 0 1-.5-10.6A5.6 5.6 0 0 1 12 3Zm1.2 11.6v4.1l1.7-1.7 1.5 1.5L12 23l-4.4-4.5L9.1 17l1.7 1.7v-4.1h2.4Z"/></svg></span><h3>Windows 11 Pro — зеркало MixKey</h3></div><p>Запасная ссылка на установочный дистрибутив Windows 11 Pro.</p><span class="related-guide-action">Используйте, если официальная загрузка Microsoft недоступна.</span></a>
           </div>
         </article>
 
         <article class="panel" id="office-downloads">
-          <h2>Office 2024 Pro Plus LTSC</h2>
+          <h2>Office</h2>
+          <p>Выберите установочный файл под версию купленного ключа. Для Office 2019, 2021 и 2024 нужны соответствующие установочные пакеты.</p>
           <div class="grid two related-guides">
+            <div class="card mirror-card"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8.2L19 7.8V21H6V3Zm7 1.9V9h4.1L13 4.9ZM8.4 11.2v2.1h8.2v-2.1H8.4Zm0 4v2.1h6.4v-2.1H8.4Z"/></svg></span><h3>Office 2019 Pro Plus</h3></div><p>Ссылка на установочный файл будет добавлена после проверки дистрибутива.</p><div class="actions"><span class="button inactive">Скоро будет доступно</span></div></div>
+            <div class="card mirror-card"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8.2L19 7.8V21H6V3Zm7 1.9V9h4.1L13 4.9ZM8.4 11.2v2.1h8.2v-2.1H8.4Zm0 4v2.1h6.4v-2.1H8.4Z"/></svg></span><h3>Office 2021 Pro Plus</h3></div><p>Ссылка на установочный файл будет добавлена после проверки дистрибутива.</p><div class="actions"><span class="button inactive">Скоро будет доступно</span></div></div>
             <a class="card" href="https://keysoft.store/download/microsoft-office/dl-microsoft-office-2024-pro-plus-ltsc" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8.2L19 7.8V21H6V3Zm7 1.9V9h4.1L13 4.9ZM8.4 11.2v2.1h8.2v-2.1H8.4Zm0 4v2.1h6.4v-2.1H8.4Z"/></svg></span><h3>Скачать Office 2024 Pro Plus LTSC</h3></div><p>Основная ссылка для скачивания установочного файла Office 2024 Pro Plus LTSC.</p><span class="related-guide-action">Если ссылка не открывается, попробуйте зеркала ниже.</span></a>
             <div class="card mirror-card">
               <div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a5.2 5.2 0 0 1 5.1 4.3A4.6 4.6 0 0 1 17.5 16h-3.1v-2.4h3.1a2.2 2.2 0 0 0 .2-4.4l-2-.2-.3-1.9A3.3 3.3 0 0 0 9 6.6l-.7 1.2-1.3.1A2.9 2.9 0 0 0 7.2 13h2.4v3H7.2a5.3 5.3 0 0 1-.5-10.6A5.6 5.6 0 0 1 12 3Zm1.2 11.6v4.1l1.7-1.7 1.5 1.5L12 23l-4.4-4.5L9.1 17l1.7 1.7v-4.1h2.4Z"/></svg></span><h3>Зеркала</h3></div>
@@ -112,6 +124,17 @@
                 <a class="button" href="https://drive.google.com/file/d/1rShxzyyqm0u3Fa1JoAe_6Qkw9eiLPcGh/view?usp=sharing" target="_blank" rel="noopener noreferrer">Google Drive</a>
               </div>
             </div>
+          </div>
+        </article>
+
+        <article class="panel" id="tools-downloads">
+          <h2>Инструменты</h2>
+          <p>Полезные инструменты для создания загрузочной флешки, удаления Office и диагностики проблем установки.</p>
+          <div class="grid two related-guides">
+            <a class="card" href="https://rufus.ie/ru/" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 3h10v7H7V3Zm-1 9h12a2 2 0 0 1 2 2v7H4v-7a2 2 0 0 1 2-2Zm3 3.2v2.6h6v-2.6H9Z"/></svg></span><h3>Rufus</h3></div><p>Инструмент для записи ISO-образа Windows на USB-флешку.</p><span class="related-guide-action">Официальная ссылка</span></a>
+            <a class="card" href="https://support.microsoft.com/office/about-the-microsoft-support-and-recovery-assistant-e90bb691-c2a7-4697-a94f-88836856c72f" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 4.5 6.4v5.3c0 4.5 3.1 7.8 7.5 9.3 4.4-1.5 7.5-4.8 7.5-9.3V6.4L12 3Zm-1.2 12.5 5.2-5.2 1.5 1.5-6.7 6.7-3.9-3.9 1.5-1.5 2.4 2.4Z"/></svg></span><h3>Microsoft SaRA</h3></div><p>Официальный помощник Microsoft для диагностики и полного удаления Office.</p><span class="related-guide-action">Официальная ссылка Microsoft</span></a>
+            <a class="card" href="https://support.microsoft.com/ru-ru/office/удаление-office-с-компьютера-9dd49b83-264a-477a-8fcc-2fdf5dbf61d8" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9.4 3h5.2l.7 2H20v2.2H4V5h4.7l.7-2Zm-3.8 6h12.8l-.9 12H6.5L5.6 9Zm4.1 2.6.4 6.7h1.8l-.3-6.7H9.7Zm4.6 0-.3 6.7h1.8l.4-6.7h-1.9Z"/></svg></span><h3>Средство удаления Office</h3></div><p>Официальная инструкция Microsoft и средство для удаления Office с компьютера.</p><span class="related-guide-action">Официальная ссылка Microsoft</span></a>
+            <a class="card" href="https://softcomputers.org/blog/office-tool-plus-skachat-instruktsiya/" target="_blank" rel="noopener noreferrer"><div class="guide-card-title"><span class="download-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 4.5 6.4v5.3c0 4.5 3.1 7.8 7.5 9.3 4.4-1.5 7.5-4.8 7.5-9.3V6.4L12 3Zm3.8 6.2 1.5 1.5-3.3 3.3 3.2 3.2-1.5 1.5-3.2-3.2-3.2 3.2-1.5-1.5 3.2-3.2-3.3-3.3 1.5-1.5 3.3 3.3 3.3-3.3Z"/></svg></span><h3>Office Tool Plus</h3></div><p>Альтернативный инструмент для полного удаления Office, если стандартные способы не помогли.</p><span class="related-guide-action">Используйте внимательно</span></a>
           </div>
         </article>
 
