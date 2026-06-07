@@ -655,16 +655,22 @@ p {
   min-height: 0;
   border-style: solid;
   overflow: hidden;
-  background: rgba(7, 17, 15, 0.52);
+  background: rgba(7, 17, 15, 0.92);
+  line-height: 0;
 }
 
 .step-media img {
   display: block;
   width: 100%;
-  max-width: none;
+  max-width: 100%;
   height: auto;
   border-radius: var(--radius);
+  filter: none;
+  opacity: 1;
+  transform: none;
+  backdrop-filter: none;
   image-rendering: auto;
+  object-fit: contain;
 }
 
 .windows-guide .step-card,
@@ -684,32 +690,29 @@ p {
   margin-right: auto;
   margin-left: auto;
   border: 1px solid rgba(142, 229, 209, 0.28);
-  box-shadow:
-    0 22px 60px rgba(0, 0, 0, 0.34),
-    0 0 34px rgba(142, 229, 209, 0.12);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
   cursor: zoom-in;
   transition: border-color 0.22s ease, box-shadow 0.22s ease;
 }
 
 .windows-guide .step-media {
-  max-width: 1536px;
+  max-width: min(100%, 1536px);
 }
 
 .office-guide .step-media {
-  max-width: 1672px;
+  max-width: min(100%, 1672px);
 }
 
 .windows-guide .step-media:hover,
 .office-guide .step-media:hover {
   border-color: rgba(142, 229, 209, 0.5);
-  box-shadow:
-    0 30px 78px rgba(0, 0, 0, 0.42),
-    0 0 46px rgba(142, 229, 209, 0.18);
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.36);
 }
 
 .windows-guide .step-media img,
 .office-guide .step-media img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
   cursor: zoom-in;
@@ -967,14 +970,17 @@ body.lightbox-open {
 
 .image-lightbox-content {
   position: relative;
-  width: min(100%, 1180px);
+  width: min(100%, 1672px);
   max-height: 90vh;
 }
 
 .image-lightbox img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   max-height: 86vh;
   object-fit: contain;
+  image-rendering: auto;
   border: 1px solid rgba(142, 229, 209, 0.36);
   border-radius: var(--radius);
   background: rgba(7, 17, 15, 0.92);
