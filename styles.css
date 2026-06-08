@@ -231,6 +231,13 @@ p {
   color: #061210;
 }
 
+.button.disabled,
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+  transform: none;
+}
+
 .hero-panel {
   position: relative;
   overflow: hidden;
@@ -502,6 +509,50 @@ p {
   background: rgba(17, 35, 31, 0.92);
 }
 
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 18px;
+  left: 18px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(142, 229, 209, 0.45), transparent);
+}
+
+.featured-card {
+  min-height: 210px;
+  background:
+    linear-gradient(145deg, rgba(142, 229, 209, 0.12), transparent 46%),
+    rgba(13, 27, 24, 0.82);
+}
+
+.card-meta {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 18px;
+  padding: 7px 10px;
+  border: 1px solid rgba(142, 229, 209, 0.22);
+  border-radius: var(--radius);
+  background: rgba(142, 229, 209, 0.08);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.download-card {
+  gap: 14px;
+}
+
+.download-card .button {
+  width: fit-content;
+  margin-top: auto;
+}
+
 .card-icon {
   display: grid;
   width: 46px;
@@ -750,6 +801,16 @@ p {
   font-weight: 760;
 }
 
+.step-hint {
+  margin-top: 12px;
+  padding: 12px 13px;
+  border: 1px solid rgba(142, 229, 209, 0.18);
+  border-radius: var(--radius);
+  background: rgba(142, 229, 209, 0.06);
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .notice,
 .note {
   margin-top: 12px;
@@ -820,6 +881,18 @@ p {
   margin-bottom: 8px;
   color: var(--danger);
   font-size: 15px;
+}
+
+.copy-box {
+  margin-top: 18px;
+  padding: 16px;
+  overflow-x: auto;
+  border: 1px solid rgba(142, 229, 209, 0.22);
+  border-radius: var(--radius);
+  background: rgba(5, 12, 11, 0.72);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  white-space: pre-line;
 }
 
 .sidebar {

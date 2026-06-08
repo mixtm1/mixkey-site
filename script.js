@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add("active");
     }
 
-    if (currentPage.indexOf("office-") === 0 && href.indexOf("#office") > -1) {
+    if ((currentPage.indexOf("office-") === 0 || currentPage === "install-office.html" || currentPage === "remove-office.html") && href.indexOf("#office") > -1) {
       link.classList.add("active");
     }
   });
