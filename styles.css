@@ -623,6 +623,11 @@ p {
   padding: 18px;
 }
 
+.step-card.text-only {
+  grid-template-columns: minmax(0, 1fr);
+  min-height: auto;
+}
+
 .step-number {
   display: inline-grid;
   width: 36px;
