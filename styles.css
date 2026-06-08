@@ -27,6 +27,11 @@ html {
   scroll-margin-top: 110px;
 }
 
+.anchor-alias {
+  display: block;
+  scroll-margin-top: 110px;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
