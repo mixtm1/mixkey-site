@@ -28,53 +28,114 @@
       <div class="container">
         <p class="eyebrow">Помощь</p>
         <h1>Ошибки активации</h1>
-        <p class="lead">Здесь собраны типовые ситуации при активации Windows и Office. Если ошибка не решается, сделайте скриншот и обратитесь в поддержку MixKey.</p>
+        <p class="lead">Найдите свою ошибку, выполните проверку и подготовьте данные для поддержки MixKey, если проблема не решилась.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container content-layout">
         <div class="content-stack">
-          <article class="panel">
+          <article class="panel anchor-section" id="windows">
             <h2>Windows</h2>
             <div class="error-grid">
-              <div class="error-card"><strong>0xC004F050</strong><h3>Ключ не подходит к редакции Windows</h3><p>Проверьте, что установленная редакция совпадает с купленным ключом: Home с Home, Pro с Pro.</p></div>
-              <div class="error-card"><strong>0xC004C008 / 0xC004C020</strong><h3>Может потребоваться помощь поддержки</h3><p>Сделайте скриншот сообщения и обратитесь в поддержку MixKey. Не пытайтесь активировать ключ много раз подряд.</p></div>
-              <div class="error-card"><strong>Редакция</strong><h3>Windows Home вместо Pro</h3><p>Ключ Windows Pro не активирует выпуск Home напрямую. Сначала смените редакцию системы на Pro, затем введите купленный ключ.</p></div>
-              <div class="error-card"><strong>Сеть</strong><h3>Нет подключения к интернету</h3><p>Проверьте сеть, VPN, прокси, дату и время в системе, затем повторите активацию.</p></div>
+              <div class="error-card">
+                <strong>0xC004F050</strong>
+                <h3>Ключ не подходит к редакции Windows</h3>
+                <p>Чаще всего ключ Pro вводят в Home или ключ Home вводят в Pro. Откройте Параметры, Система, О системе и проверьте выпуск Windows. Если установлен Home, а ключ куплен для Pro, сначала выполните переход Home -> Pro.</p>
+              </div>
+              <div class="error-card">
+                <strong>0xC004C008</strong>
+                <h3>Ключ уже использовался или нужна дополнительная проверка</h3>
+                <p>Не вводите ключ много раз подряд. Сделайте скриншот ошибки, проверьте подключение к интернету и отправьте данные в поддержку MixKey.</p>
+              </div>
+              <div class="error-card">
+                <strong>0xC004C020</strong>
+                <h3>Сервер активации отклонил запрос</h3>
+                <p>Подождите несколько минут, проверьте дату, время и интернет, затем повторите активацию. Если ошибка повторяется, отправьте скриншот в поддержку.</p>
+              </div>
+              <div class="error-card">
+                <strong>Home вместо Pro</strong>
+                <h3>Установлена не та редакция Windows</h3>
+                <p>Ключ Windows Pro не активирует Windows Home напрямую. Отключите интернет, введите технический ключ перехода VK7JG-NPHTM-C97JM-9MPGT-3V66T, перезагрузите компьютер, затем подключите интернет и введите купленный ключ Pro.</p>
+              </div>
+              <div class="error-card">
+                <strong>Нет интернета</strong>
+                <h3>Windows не может проверить ключ</h3>
+                <p>Проверьте подключение, временно отключите VPN или прокси, проверьте дату и время Windows. После этого повторите активацию.</p>
+              </div>
+              <div class="error-card">
+                <strong>Ключ введен неверно</strong>
+                <h3>Лишний пробел или символ</h3>
+                <p>Скопируйте ключ заново или введите его вручную. Проверьте, что все пять групп символов присутствуют полностью.</p>
+              </div>
             </div>
           </article>
 
-          <article class="panel">
+          <article class="panel anchor-section" id="office">
             <h2>Office</h2>
             <div class="error-grid">
-              <div class="error-card"><strong>Версия</strong><h3>Установлена другая версия Office</h3><p>Удалите старую или неподходящую версию Office, перезагрузите компьютер и установите нужный выпуск заново.</p></div>
-              <div class="error-card"><strong>Аккаунт</strong><h3>Office просит войти в Microsoft Account</h3><p>Для активации ключом вход обычно не требуется. Если непонятно, что выбрать, сделайте скриншот и напишите в поддержку.</p></div>
-              <div class="error-card"><strong>Ключ</strong><h3>Ключ не принимается</h3><p>Проверьте версию Office, отсутствие лишних пробелов и правильность символов ключа.</p></div>
-              <div class="error-card"><strong>Лимит</strong><h3>Превышен лимит активаций</h3><p>Сделайте скриншот сообщения и обратитесь в поддержку MixKey для проверки ситуации.</p></div>
-              <div class="error-card"><strong>Окно активации</strong><h3>Не появляется окно ввода ключа</h3><p>Откройте «Файл» → «Учетная запись» → «Изменить ключ продукта». Если кнопки нет, приложите скриншот в поддержку.</p></div>
+              <div class="error-card">
+                <strong>Ключ не принимается</strong>
+                <h3>Неверная версия или ошибка ввода</h3>
+                <p>Проверьте, что установлен именно тот Office, для которого куплен ключ: 2019, 2021 или 2024 Pro Plus. Уберите лишние пробелы в начале и конце ключа.</p>
+              </div>
+              <div class="error-card">
+                <strong>Установлена другая версия</strong>
+                <h3>Microsoft 365 или другой Office мешает активации</h3>
+                <p>Удалите неподходящую версию Office, перезагрузите компьютер и установите нужный выпуск заново. После этого повторите ввод ключа.</p>
+              </div>
+              <div class="error-card">
+                <strong>Требуется вход в аккаунт Microsoft</strong>
+                <h3>Office предлагает авторизацию</h3>
+                <p>Для активации ключом вход обычно не требуется. Если окно не дает выбрать ввод ключа или предлагает несколько вариантов, сделайте скриншот и отправьте его в поддержку MixKey.</p>
+              </div>
+              <div class="error-card">
+                <strong>Превышен лимит активаций</strong>
+                <h3>Появилось сообщение о лимите</h3>
+                <p>Сделайте скриншот сообщения. Не пытайтесь вводить ключ много раз подряд. Отправьте данные в поддержку MixKey для проверки.</p>
+              </div>
+              <div class="error-card">
+                <strong>Нет кнопки изменения ключа</strong>
+                <h3>Office не показывает ввод ключа продукта</h3>
+                <p>Откройте Файл, Учетная запись и проверьте блок сведений о продукте. Если там отображается Microsoft 365 или другая версия, удалите ее и установите нужный Office.</p>
+              </div>
+              <div class="error-card">
+                <strong>Статус не обновился</strong>
+                <h3>Office остается неактивированным</h3>
+                <p>Закройте все приложения Office, перезагрузите компьютер и снова откройте Word. Если статус не изменился, подготовьте скриншот страницы Учетная запись.</p>
+              </div>
             </div>
           </article>
 
-          <article class="panel">
+          <article class="panel anchor-section" id="support-data">
             <h2>Что отправить в поддержку MixKey</h2>
+            <p>Чем точнее данные, тем быстрее специалист поймет причину ошибки.</p>
             <ul class="check-list">
               <li>Скриншот окна с ошибкой или статусом активации.</li>
               <li>Название продукта: например, Windows 11 Pro или Office 2024 Pro Plus LTSC.</li>
-              <li>Версию установленной Windows или Office.</li>
-              <li>Уже введен ли ключ продукта.</li>
+              <li>Для Windows: текущую редакцию из раздела О системе.</li>
+              <li>Для Office: скриншот страницы Файл, Учетная запись.</li>
+              <li>Что уже пробовали: удаление старого Office, перезагрузка, повторный ввод ключа.</li>
               <li>Последние 5 символов ключа, если специалист поддержки попросит их.</li>
-              <li>Краткое описание шага, на котором появилась проблема.</li>
             </ul>
-            <div class="actions">
-              <a class="button primary" href="support.html">Написать в поддержку</a>
-              <a class="button" href="phone-activation.html">Активация по телефону</a>
+            <div class="notice important"><strong>Безопасность</strong><p>Не публикуйте полный ключ в открытом доступе. Отправляйте его только в личный чат с продавцом или специалистом поддержки, если это действительно требуется для проверки.</p></div>
+            <div class="actions"><a class="button primary" href="support.html">Написать в поддержку</a><a class="button" href="faq.html">Посмотреть FAQ</a></div>
+          </article>
+
+          <article class="panel anchor-section" id="related">
+            <h2>Связанные инструкции</h2>
+            <div class="grid three related-guides">
+              <a class="card" href="windows-home-to-pro.html"><span class="card-icon">P</span><h3>Home -> Pro</h3><p>Смена редакции Windows Home на Pro перед активацией ключом Pro.</p></a>
+              <a class="card" href="remove-office.html"><span class="card-icon">X</span><h3>Удалить Office</h3><p>Полное удаление старых версий Office перед установкой.</p></a>
+              <a class="card" href="install-office.html"><span class="card-icon">O</span><h3>Установка Office</h3><p>Порядок установки Office 2019, 2021 и 2024 Pro Plus.</p></a>
+              <a class="card" href="phone-activation.html"><span class="card-icon">T</span><h3>Телефонная активация</h3><p>Что делать, если Windows или Office показывает ID установки.</p></a>
             </div>
           </article>
         </div>
 
-        <aside class="sidebar" aria-label="Связанные инструкции">
-          <div class="side-box"><strong>Инструкции</strong><div class="side-links"><a href="downloads.html">Загрузки</a><a href="install-windows.html">Установка Windows</a><a href="install-office.html">Установка Office</a><a href="remove-office.html">Удаление Office</a><a href="phone-activation.html">Телефонная активация</a></div></div>
+        <aside class="sidebar" aria-label="Содержание страницы">
+          <div class="side-box"><strong>На странице</strong><div class="side-links"><a href="#windows">Windows</a><a href="#office">Office</a><a href="#support-data">Что отправить</a><a href="#related">Связанные инструкции</a></div></div>
+          <div class="side-box"><strong>Инструкции</strong><div class="side-links"><a href="downloads.html">Загрузки</a><a href="install-windows.html">Установка Windows</a><a href="install-office.html">Установка Office</a><a href="remove-office.html">Удаление Office</a><a href="support.html">Поддержка</a></div></div>
         </aside>
       </div>
     </section>

@@ -7,7 +7,7 @@
   <meta name="description" content="Универсальная инструкция MixKey по установке Windows 10 и Windows 11 Home или Pro.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="guide-page">
   <header class="site-header">
     <nav class="nav" aria-label="Основная навигация">
       <a class="logo" href="index.html"><span class="logo-mark">M</span><span>MixKey</span></a>
@@ -28,42 +28,56 @@
       <div class="container">
         <p class="eyebrow">Windows</p>
         <h1>Установка Windows</h1>
-        <p class="lead">Универсальная инструкция для Windows 10 Home, Windows 10 Pro, Windows 11 Home и Windows 11 Pro.</p>
+        <p class="lead">Универсальный порядок установки Windows 10 и Windows 11 перед активацией ключом Home или Pro.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container content-layout">
         <div class="content-stack">
-          <article class="panel">
-            <h2>Подходит для</h2>
-            <div class="error-grid">
-              <div class="error-card"><strong>Windows 10</strong><h3>Home и Pro</h3><p>Используйте эту инструкцию при чистой установке или переустановке Windows 10.</p></div>
-              <div class="error-card"><strong>Windows 11</strong><h3>Home и Pro</h3><p>Подходит для установки Windows 11 и подготовки системы к активации ключом.</p></div>
-            </div>
+          <article class="panel anchor-section" id="need">
+            <h2>Что понадобится</h2>
+            <ul class="check-list">
+              <li>USB-флешка объемом от 8 ГБ.</li>
+              <li>Компьютер с доступом к интернету для скачивания Windows.</li>
+              <li>Ключ Windows Home или Pro.</li>
+              <li>Резервная копия важных файлов перед чистой установкой.</li>
+            </ul>
+            <div class="notice important"><strong>Важно</strong><p>При создании установочной флешки все данные на ней будут удалены. При чистой установке Windows данные на выбранном диске также могут быть удалены.</p></div>
           </article>
 
-          <article class="panel">
+          <article class="panel anchor-section" id="steps">
             <h2>Порядок установки</h2>
             <div class="steps">
-              <div class="step-card"><div class="step-body"><span class="step-number">1</span><h3>Скачайте Windows</h3><p>Откройте раздел загрузок и скачайте официальный образ Windows или запасной дистрибутив, если официальный сайт недоступен.</p><div class="actions"><a class="button" href="downloads.html#windows-downloads">Открыть загрузки</a></div></div><div class="step-media"><span>Место для скриншота: загрузка Windows</span></div></div>
-              <div class="step-card"><div class="step-body"><span class="step-number">2</span><h3>Создайте загрузочную флешку</h3><p>Используйте официальный инструмент Microsoft или проверенную программу для записи образа на USB-флешку.</p><div class="notice important"><strong>Важно</strong><p>Все данные на флешке будут удалены. Сохраните нужные файлы заранее.</p></div></div><div class="step-media"><span>Место для скриншота: загрузочная флешка</span></div></div>
-              <div class="step-card"><div class="step-body"><span class="step-number">3</span><h3>Запустите установку</h3><p>Перезагрузите компьютер, выберите загрузку с флешки и следуйте мастеру установки Windows.</p></div><div class="step-media"><span>Место для скриншота: мастер установки</span></div></div>
-              <div class="step-card"><div class="step-body"><span class="step-number">4</span><h3>Выберите редакцию Home или Pro</h3><p>Выберите ту редакцию, для которой куплен ключ. Ключ Home не активирует Pro, а ключ Pro не предназначен для Home.</p></div><div class="step-media"><span>Место для скриншота: выбор редакции</span></div></div>
-              <div class="step-card"><div class="step-body"><span class="step-number">5</span><h3>Введите ключ продукта</h3><p>Ключ можно ввести во время установки или после нее в разделе Параметры, Система, Активация.</p></div><div class="step-media"><span>Место для скриншота: ввод ключа</span></div></div>
-              <div class="step-card"><div class="step-body"><span class="step-number">6</span><h3>Проверьте активацию</h3><p>После подключения к интернету откройте раздел Активация и убедитесь, что Windows активирована.</p></div><div class="step-media"><span>Место для скриншота: статус активации</span></div></div>
+              <div class="step-card text-only"><div class="step-body"><span class="step-number">1</span><h3>Скачайте Windows</h3><p>Откройте раздел загрузок MixKey и скачайте Windows 10 или Windows 11 с официальной страницы Microsoft или доступного зеркала.</p><div class="actions"><a class="button" href="downloads.html#windows-downloads">Открыть загрузки</a></div></div></div>
+              <div class="step-card text-only"><div class="step-body"><span class="step-number">2</span><h3>Создайте установочную флешку</h3><p>Используйте Media Creation Tool от Microsoft или Rufus. Выберите скачанный ISO-образ и запишите его на USB-флешку.</p></div></div>
+              <div class="step-card text-only"><div class="step-body"><span class="step-number">3</span><h3>Загрузитесь с флешки</h3><p>Перезагрузите компьютер, откройте меню загрузки и выберите USB-флешку. Обычно меню загрузки открывается клавишами F8, F11, F12 или Esc в зависимости от устройства.</p></div></div>
+              <div class="step-card text-only"><div class="step-body"><span class="step-number">4</span><h3>Выберите редакцию</h3><p>Выберите ту редакцию, для которой куплен ключ: Home или Pro. Ключ Home не активирует Pro, а ключ Pro не активирует Home без смены редакции.</p></div></div>
+              <div class="step-card text-only"><div class="step-body"><span class="step-number">5</span><h3>Завершите установку</h3><p>Следуйте мастеру установки Windows. Если ключ можно пропустить во время установки, вы сможете ввести его позже в разделе Активация.</p></div></div>
+              <div class="step-card text-only"><div class="step-body"><span class="step-number">6</span><h3>Активируйте Windows</h3><p>После подключения к интернету откройте Параметры, Активация и введите купленный ключ продукта.</p></div></div>
             </div>
           </article>
 
-          <article class="panel">
+          <article class="panel anchor-section" id="activation">
+            <h2>Инструкции по активации</h2>
+            <div class="grid two related-guides">
+              <a class="card" href="windows-10-home.html"><span class="card-icon">10</span><h3>Windows 10 Home</h3><p>Активация домашней редакции Windows 10.</p></a>
+              <a class="card" href="windows-10-pro.html"><span class="card-icon">10</span><h3>Windows 10 Pro</h3><p>Активация Windows 10 Pro и переход с Home на Pro.</p></a>
+              <a class="card" href="windows-11-home.html"><span class="card-icon">11</span><h3>Windows 11 Home</h3><p>Активация домашней редакции Windows 11.</p></a>
+              <a class="card" href="windows-11-pro.html"><span class="card-icon">11</span><h3>Windows 11 Pro</h3><p>Активация Windows 11 Pro и переход с Home на Pro.</p></a>
+            </div>
+          </article>
+
+          <article class="panel anchor-section" id="errors">
             <h2>Если возникла ошибка</h2>
-            <p>Сверьте редакцию Windows с купленным ключом и проверьте подключение к интернету. Если ошибка остается, откройте раздел типовых ошибок или обратитесь в поддержку MixKey.</p>
+            <p>Проверьте, что выбранная редакция Windows совпадает с купленным ключом, а компьютер подключен к интернету. Если ошибка остается, откройте страницу типовых ошибок.</p>
             <div class="actions"><a class="button" href="activation-errors.html">Ошибки активации</a><a class="button primary" href="support.html">Поддержка MixKey</a></div>
           </article>
         </div>
 
-        <aside class="sidebar" aria-label="Связанные инструкции">
-          <div class="side-box"><strong>Windows</strong><div class="side-links"><a href="downloads.html#windows-downloads">Скачать Windows</a><a href="phone-activation.html">Активация по телефону</a><a href="activation-errors.html">Ошибки активации</a><a href="support.html">Поддержка</a></div></div>
+        <aside class="sidebar" aria-label="Содержание страницы">
+          <div class="side-box"><strong>На странице</strong><div class="side-links"><a href="#need">Что понадобится</a><a href="#steps">Порядок установки</a><a href="#activation">Активация</a><a href="#errors">Ошибки</a></div></div>
+          <div class="side-box"><strong>Windows</strong><div class="side-links"><a href="downloads.html#windows-downloads">Скачать Windows</a><a href="windows-home-to-pro.html">Home -> Pro</a><a href="activation-errors.html">Ошибки активации</a><a href="support.html">Поддержка</a></div></div>
         </aside>
       </div>
     </section>
