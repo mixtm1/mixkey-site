@@ -232,14 +232,17 @@ p {
 
 .button-icon {
   flex: 0 0 auto;
-  width: 17px;
-  height: 17px;
+  width: 28px;
+  height: 28px;
+  overflow: visible;
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.9;
+  stroke-width: 0;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: drop-shadow(0 0 8px rgba(142, 229, 209, 0.22));
+  filter:
+    drop-shadow(0 9px 12px rgba(0, 0, 0, 0.24))
+    drop-shadow(0 0 14px rgba(142, 229, 209, 0.28));
 }
 
 .hero-actions .button {
@@ -545,31 +548,70 @@ p {
 
 .help-group-icon {
   display: inline-flex;
-  width: 34px;
-  height: 34px;
+  width: 56px;
+  height: 56px;
   align-items: center;
   justify-content: center;
   color: var(--accent);
-  filter: drop-shadow(0 0 14px rgba(142, 229, 209, 0.22));
+  filter:
+    drop-shadow(0 14px 20px rgba(0, 0, 0, 0.28))
+    drop-shadow(0 0 20px rgba(142, 229, 209, 0.22));
 }
 
 .icon-tile {
   overflow: visible;
 }
 
+.premium-icon {
+  display: block;
+}
+
 .ui-icon {
-  width: 30px;
-  height: 30px;
+  width: 52px;
+  height: 52px;
+  overflow: visible;
   color: var(--accent);
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.8;
+  stroke-width: 0;
   stroke-linecap: round;
   stroke-linejoin: round;
-  opacity: 0.96;
+  opacity: 1;
   filter:
-    drop-shadow(0 0 8px rgba(142, 229, 209, 0.34))
-    drop-shadow(0 0 22px rgba(142, 229, 209, 0.12));
+    drop-shadow(0 12px 16px rgba(0, 0, 0, 0.3))
+    drop-shadow(0 0 18px rgba(142, 229, 209, 0.28))
+    drop-shadow(0 0 34px rgba(73, 203, 180, 0.12));
+}
+
+.button-icon .icon-stroke,
+.ui-icon .icon-stroke {
+  fill: none;
+  stroke: #c9fff6;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.86;
+}
+
+.button-icon .icon-highlight,
+.ui-icon .icon-highlight {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1.15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.52;
+}
+
+.button-icon .icon-glass,
+.ui-icon .icon-glass {
+  mix-blend-mode: screen;
+  opacity: 0.82;
+}
+
+.button-icon .icon-depth,
+.ui-icon .icon-depth {
+  opacity: 0.4;
 }
 
 .ui-icon .fill-mark {
@@ -820,11 +862,11 @@ p {
 
 .card-icon {
   display: inline-flex;
-  width: 32px;
-  height: 32px;
+  width: 56px;
+  height: 56px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   background: none;
   color: var(--accent);
   font-size: 22px;
