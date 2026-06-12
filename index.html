@@ -40,17 +40,16 @@
           <div class="interface-window">
             <div class="window-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
             <div class="window-body">
-              <div class="mock-sidebar"><div class="mock-line"></div><div class="mock-line"></div><div class="mock-line"></div></div>
+              <div class="mock-sidebar"><div class="mock-line active"></div><div class="mock-line"></div><div class="mock-line"></div></div>
               <div class="mock-content">
-                <div class="status-card">
-                  <div class="status-title">Support Center</div>
-                  <div class="status-row"><p>Активация продукта</p><span class="status-pill">Готово</span></div>
+                <div class="status-card guide-preview-card">
+                  <div class="status-title">3 шага до активации</div>
+                  <p>Откройте нужный маршрут и двигайтесь по подсказкам на экране.</p>
                 </div>
-                <div class="metric-grid">
-                  <div class="metric-card"><strong>5</strong><p>шагов Windows</p></div>
-                  <div class="metric-card"><strong>6</strong><p>шагов Office</p></div>
-                  <div class="metric-card"><strong>FAQ</strong><p>ошибки</p></div>
-                  <div class="metric-card"><strong>24/7</strong><p>подсказки</p></div>
+                <div class="mock-steps">
+                  <div class="mock-step"><span>1</span><div><strong>Выберите продукт</strong><p>Windows или Microsoft Office</p></div></div>
+                  <div class="mock-step"><span>2</span><div><strong>Откройте инструкцию</strong><p>Скриншоты и понятные шаги</p></div></div>
+                  <div class="mock-step"><span>3</span><div><strong>Завершите активацию</strong><p>Проверьте статус лицензии</p></div></div>
                 </div>
               </div>
             </div>
@@ -70,7 +69,9 @@
         <div class="help-shell">
           <article class="help-group">
             <div class="help-group-head">
-              <span class="help-group-icon">W</span>
+              <span class="help-group-icon icon-tile">
+                <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.2 10.7 4v7.4H3V5.2Zm9.7-1.5L21 2.5v8.9h-8.3V3.7ZM3 12.6h7.7V20L3 18.8v-6.2Zm9.7 0H21v8.9l-8.3-1.2v-7.7Z"/></svg>
+              </span>
               <div>
                 <h3>Windows</h3>
                 <p>Активация установленной редакции Home или Pro через параметры Windows.</p>
@@ -90,7 +91,9 @@
 
           <article class="help-group anchor-section" id="office">
             <div class="help-group-head">
-              <span class="help-group-icon">O</span>
+              <span class="help-group-icon icon-tile">
+                <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 2.6 5.8 4.3A2.3 2.3 0 0 0 4 6.6v10.8a2.3 2.3 0 0 0 1.8 2.3l7.4 1.7A2.3 2.3 0 0 0 16 19.2V4.8a2.3 2.3 0 0 0-2.8-2.2Zm.4 4.2v10.4l-5.5-1.1V7.9l5.5-1.1Zm3.7.5h2.2a1.5 1.5 0 0 1 1.5 1.5v6.4a1.5 1.5 0 0 1-1.5 1.5h-2.2V7.3Z"/></svg>
+              </span>
               <div>
                 <h3>Office</h3>
                 <p>Одна инструкция для Office 2019, Office 2021, Office 2024, Office 2026 и будущих версий.</p>
@@ -116,9 +119,9 @@
           <p>Дополнительные страницы помогают скачать установщик, разобраться с кодом ошибки или подготовить обращение.</p>
         </div>
         <div class="grid three">
-          <a class="card product-card" href="downloads.html"><span class="card-icon">D</span><h3>Загрузки</h3><p>Windows 10, Windows 11 и Microsoft Office с подсказками по дальнейшим шагам.</p><span class="card-meta">Перед установкой</span></a>
-          <a class="card product-card" href="activation-errors.html"><span class="card-icon">!</span><h3>Ошибки активации</h3><p>Коды Windows и Office, быстрые проверки и шаблон сообщения продавцу.</p><span class="card-meta">Если ключ не принят</span></a>
-          <a class="card product-card" href="support.html"><span class="card-icon">S</span><h3>Поддержка</h3><p>Что приложить к обращению, чтобы продавец быстрее проверил заказ.</p><span class="card-meta">Когда нужна помощь</span></a>
+          <a class="card product-card quick-card" href="downloads.html"><span class="card-icon icon-tile"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9.2l3.1-3.1 1.4 1.4L12 16l-5.5-5.5 1.4-1.4 3.1 3.1V3Zm-6 13h2v3h10v-3h2v3.4c0 .9-.7 1.6-1.6 1.6H6.6c-.9 0-1.6-.7-1.6-1.6V16Z"/></svg></span><h3>Загрузки</h3><p>Windows 10, Windows 11 и Microsoft Office с подсказками по дальнейшим шагам.</p><span class="card-meta">Перед установкой</span></a>
+          <a class="card product-card quick-card" href="activation-errors.html"><span class="card-icon icon-tile"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.8 20h18.4L12 3Zm0 4.2L17.8 18H6.2L12 7.2Zm-1 3.1h2v4.6h-2v-4.6Zm0 5.8h2V18h-2v-1.9Z"/></svg></span><h3>Ошибки активации</h3><p>Коды Windows и Office, быстрые проверки и шаблон сообщения продавцу.</p><span class="card-meta">Если ключ не принят</span></a>
+          <a class="card product-card quick-card" href="support.html"><span class="card-icon icon-tile"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a7 7 0 0 0-7 7v3.2A3 3 0 0 0 8 16h1v-6H7a5 5 0 0 1 10 0h-2v6h1a3 3 0 0 0 3-2.8V10a7 7 0 0 0-7-7Zm-1 14h2v1h3v2h-3.6c-.8 0-1.4-.6-1.4-1.4V17Z"/></svg></span><h3>Поддержка</h3><p>Что приложить к обращению, чтобы продавец быстрее проверил заказ.</p><span class="card-meta">Когда нужна помощь</span></a>
         </div>
       </div>
     </section>

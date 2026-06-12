@@ -241,7 +241,7 @@ p {
 .hero-panel {
   position: relative;
   overflow: hidden;
-  min-height: 500px;
+  min-height: 590px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background:
@@ -304,6 +304,10 @@ p {
   background: rgba(255, 255, 255, 0.12);
 }
 
+.mock-line.active {
+  background: rgba(142, 229, 209, 0.42);
+}
+
 .mock-content {
   display: grid;
   gap: 14px;
@@ -322,9 +326,20 @@ p {
   padding: 18px;
 }
 
+.guide-preview-card {
+  background:
+    linear-gradient(135deg, rgba(142, 229, 209, 0.12), rgba(255, 255, 255, 0.035)),
+    rgba(255, 255, 255, 0.05);
+}
+
 .status-title {
   color: var(--text);
   font-weight: 800;
+}
+
+.guide-preview-card p {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .status-row {
@@ -360,6 +375,48 @@ p {
   margin-bottom: 10px;
   color: var(--text);
   font-size: 25px;
+}
+
+.mock-steps {
+  display: grid;
+  gap: 12px;
+}
+
+.mock-step {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-height: 80px;
+  padding: 14px;
+  border: 1px solid rgba(142, 229, 209, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.mock-step span {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid rgba(142, 229, 209, 0.32);
+  border-radius: var(--radius);
+  background: rgba(142, 229, 209, 0.1);
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.mock-step strong {
+  display: block;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.mock-step p {
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 1.35;
 }
 
 .section {
@@ -456,6 +513,18 @@ p {
   color: var(--accent);
   font-size: 20px;
   font-weight: 900;
+}
+
+.icon-tile {
+  overflow: hidden;
+}
+
+.ui-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--accent);
+  fill: currentColor;
+  filter: drop-shadow(0 0 12px rgba(142, 229, 209, 0.16));
 }
 
 .help-group-head p {
@@ -651,6 +720,7 @@ p {
 .product-card {
   position: relative;
   overflow: hidden;
+  gap: 12px;
 }
 
 .product-card::after {
@@ -703,6 +773,22 @@ p {
   color: var(--accent);
   font-size: 20px;
   font-weight: 900;
+}
+
+.quick-card {
+  justify-content: flex-start;
+  min-height: 224px;
+  background:
+    linear-gradient(145deg, rgba(142, 229, 209, 0.07), transparent 45%),
+    rgba(13, 27, 24, 0.78);
+}
+
+.quick-card h3 {
+  margin-top: 2px;
+}
+
+.quick-card .card-meta {
+  margin-top: auto;
 }
 
 .card p,
@@ -856,10 +942,10 @@ p {
 
 .step-media:has(img) {
   display: block;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: auto;
   min-height: 0;
   border-style: solid;
-  overflow: hidden;
+  overflow: visible;
   background: rgba(7, 17, 15, 0.92);
   line-height: 0;
 }
@@ -894,6 +980,7 @@ p {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  overflow: visible;
   border: 1px solid rgba(142, 229, 209, 0.28);
   box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
   cursor: zoom-in;
@@ -916,6 +1003,7 @@ p {
 
 .windows-guide .step-media img,
 .office-guide .step-media img {
+  display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -1241,7 +1329,7 @@ body.lightbox-open {
   }
 
   .hero-panel {
-    min-height: 430px;
+    min-height: 500px;
   }
 
   .grid.categories,
@@ -1326,6 +1414,15 @@ body.lightbox-open {
 
   .status-card {
     padding: 12px;
+  }
+
+  .mock-step {
+    min-height: 68px;
+    padding: 11px;
+  }
+
+  .mock-step strong {
+    font-size: 14px;
   }
 
   .status-row {
