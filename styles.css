@@ -234,7 +234,11 @@ p {
   flex: 0 0 auto;
   width: 17px;
   height: 17px;
-  fill: currentColor;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
   filter: drop-shadow(0 0 8px rgba(142, 229, 209, 0.22));
 }
 
@@ -557,11 +561,20 @@ p {
   width: 26px;
   height: 26px;
   color: var(--accent);
-  fill: currentColor;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.85;
+  stroke-linecap: round;
+  stroke-linejoin: round;
   opacity: 0.96;
   filter:
     drop-shadow(0 0 8px rgba(142, 229, 209, 0.34))
     drop-shadow(0 0 22px rgba(142, 229, 209, 0.12));
+}
+
+.ui-icon .fill-mark {
+  fill: currentColor;
+  stroke: none;
 }
 
 .edition-badge {
@@ -569,7 +582,9 @@ p {
   flex: 0 0 auto;
   min-width: 0;
   justify-content: center;
-  margin-left: auto;
+  align-self: center;
+  justify-self: end;
+  margin: 0 26px 0 14px;
   padding: 0 1px 2px;
   border-bottom: 1px solid rgba(142, 229, 209, 0.32);
   background: none;
@@ -581,6 +596,24 @@ p {
   letter-spacing: 0.02em;
   text-shadow: 0 0 14px rgba(142, 229, 209, 0.2);
   white-space: nowrap;
+}
+
+.edition-link {
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 12px;
+}
+
+.edition-link .edition-title {
+  grid-column: 1;
+}
+
+.edition-link small {
+  grid-column: 1;
+}
+
+.edition-link .edition-badge {
+  grid-column: 2;
+  grid-row: 1 / span 2;
 }
 
 .help-group-head p {
