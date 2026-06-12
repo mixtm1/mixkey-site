@@ -558,12 +558,12 @@ p {
 }
 
 .ui-icon {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   color: var(--accent);
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.85;
+  stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
   opacity: 0.96;
@@ -575,45 +575,6 @@ p {
 .ui-icon .fill-mark {
   fill: currentColor;
   stroke: none;
-}
-
-.edition-badge {
-  display: inline-flex;
-  flex: 0 0 auto;
-  min-width: 0;
-  justify-content: center;
-  align-self: center;
-  justify-self: end;
-  margin: 0 26px 0 14px;
-  padding: 0 1px 2px;
-  border-bottom: 1px solid rgba(142, 229, 209, 0.32);
-  background: none;
-  color: var(--accent);
-  font-size: 11.5px;
-  font-weight: 820;
-  line-height: 1.1;
-  text-transform: none;
-  letter-spacing: 0.02em;
-  text-shadow: 0 0 14px rgba(142, 229, 209, 0.2);
-  white-space: nowrap;
-}
-
-.edition-link {
-  grid-template-columns: minmax(0, 1fr) auto;
-  column-gap: 12px;
-}
-
-.edition-link .edition-title {
-  grid-column: 1;
-}
-
-.edition-link small {
-  grid-column: 1;
-}
-
-.edition-link .edition-badge {
-  grid-column: 2;
-  grid-row: 1 / span 2;
 }
 
 .help-group-head p {
