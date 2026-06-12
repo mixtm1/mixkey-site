@@ -241,7 +241,7 @@ p {
 .hero-panel {
   position: relative;
   overflow: hidden;
-  min-height: 440px;
+  min-height: 500px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background:
@@ -397,6 +397,145 @@ p {
 
 .grid.three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.help-center {
+  padding-top: 62px;
+}
+
+.help-center-head {
+  max-width: 760px;
+  margin-bottom: 26px;
+}
+
+.help-center-head .eyebrow {
+  margin-bottom: 12px;
+}
+
+.help-center-head p:last-child {
+  margin-top: 14px;
+  font-size: 18px;
+}
+
+.help-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.help-group {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(142, 229, 209, 0.1), transparent 44%),
+    rgba(13, 27, 24, 0.82);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.2);
+}
+
+.help-group-head {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.help-group-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgba(142, 229, 209, 0.28);
+  border-radius: var(--radius);
+  background: rgba(142, 229, 209, 0.1);
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.help-group-head p {
+  margin-top: 8px;
+}
+
+.help-list {
+  display: grid;
+  gap: 10px;
+}
+
+.help-link {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  min-height: 74px;
+  padding: 15px 44px 15px 16px;
+  border: 1px solid rgba(142, 229, 209, 0.14);
+  border-radius: var(--radius);
+  background: rgba(7, 17, 15, 0.36);
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.help-link::after {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  color: var(--accent);
+  font-weight: 900;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+.help-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(142, 229, 209, 0.44);
+  background: rgba(17, 35, 31, 0.88);
+}
+
+.help-link:hover::after {
+  transform: translate(4px, -50%);
+}
+
+.help-link span {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 820;
+}
+
+.help-link small {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.help-link.featured {
+  border-color: rgba(142, 229, 209, 0.3);
+  background: rgba(142, 229, 209, 0.08);
+}
+
+.help-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 2px;
+}
+
+.help-actions a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid rgba(142, 229, 209, 0.18);
+  border-radius: var(--radius);
+  background: rgba(142, 229, 209, 0.07);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 780;
 }
 
 .related-guides {
@@ -1096,12 +1235,13 @@ body.lightbox-open {
 
 @media (max-width: 920px) {
   .hero-grid,
-  .content-layout {
+  .content-layout,
+  .help-shell {
     grid-template-columns: 1fr;
   }
 
   .hero-panel {
-    min-height: 360px;
+    min-height: 430px;
   }
 
   .grid.categories,
@@ -1163,8 +1303,7 @@ body.lightbox-open {
   .sidebar,
   .step-card,
   .error-grid,
-  .screenshot-grid,
-  .metric-grid {
+  .screenshot-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1180,11 +1319,48 @@ body.lightbox-open {
     inset: 18px;
   }
 
+  .mock-content {
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .status-card {
+    padding: 12px;
+  }
+
+  .status-row {
+    gap: 8px;
+  }
+
+  .metric-card {
+    min-height: 70px;
+    padding: 12px;
+  }
+
+  .metric-card strong {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
+
   .card,
   .step-card,
   .support-card,
-  .panel {
+  .panel,
+  .help-group {
     padding: 20px;
+  }
+
+  .help-group-head {
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+
+  .help-group-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .help-link {
+    padding-right: 38px;
   }
 }
 
