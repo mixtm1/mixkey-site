@@ -75,13 +75,17 @@ img {
 .logo {
   display: inline-flex;
   align-items: center;
+  min-height: 38px;
+  padding: 3px 0;
   font-size: 23px;
   font-weight: 850;
+  line-height: 1.2;
   letter-spacing: 0;
   background: linear-gradient(135deg, #f4fffc 0%, #8ee5d1 48%, #49cbb4 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  overflow: visible;
   text-shadow:
     0 0 18px rgba(142, 229, 209, 0.2),
     0 0 34px rgba(73, 203, 180, 0.12);
@@ -89,7 +93,8 @@ img {
 
 .logo-text {
   display: block;
-  line-height: 1;
+  line-height: 1.2;
+  padding: 2px 0 4px;
 }
 
 .nav-links {
@@ -848,7 +853,17 @@ p {
 
 .download-card .button {
   width: fit-content;
+}
+
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: auto;
+}
+
+.download-actions + .related-guide-action {
+  margin-top: 4px;
 }
 
 .card-icon {
