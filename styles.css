@@ -228,10 +228,11 @@ p {
 
 .button-icon {
   flex: 0 0 auto;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
   display: block;
+  opacity: 1;
 }
 
 .hero-actions .button {
@@ -537,8 +538,8 @@ p {
 
 .help-group-icon {
   display: inline-flex;
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   align-items: center;
   justify-content: center;
   color: var(--accent);
@@ -552,26 +553,27 @@ p {
   display: block;
   flex-shrink: 0;
   object-fit: contain;
+  opacity: 1;
 }
 
 .icon-hero {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-card {
   width: 44px;
   height: 44px;
 }
 
-.icon-card {
-  width: 28px;
-  height: 28px;
-}
-
 .icon-button {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 .button-icon.icon-button {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 .help-group-head p {
@@ -817,8 +819,8 @@ p {
 
 .card-icon {
   display: inline-flex;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
@@ -844,8 +846,14 @@ p {
 }
 
 .quick-card .icon-card {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
+}
+
+body:has(.hero) .product-card.quick-card .card-icon,
+body:has(.hero) .product-card.quick-card .icon-card {
+  width: 52px;
+  height: 52px;
 }
 
 .quick-card .card-meta {
@@ -1575,11 +1583,6 @@ body.lightbox-open {
 
   .help-group-head {
     grid-template-columns: 50px minmax(0, 1fr);
-  }
-
-  .help-group-icon {
-    width: 50px;
-    height: 50px;
   }
 
   .help-link {
