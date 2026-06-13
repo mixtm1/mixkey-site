@@ -235,8 +235,8 @@ p {
   display: block;
   opacity: 1;
   filter:
-    drop-shadow(0 0 10px rgba(142, 229, 209, 0.22))
-    drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22));
+    drop-shadow(0 0 16px rgba(142, 229, 209, 0.38))
+    drop-shadow(0 10px 22px rgba(0, 0, 0, 0.32));
 }
 
 .hero-actions .button {
@@ -559,8 +559,17 @@ p {
   object-fit: contain;
   opacity: 1;
   filter:
-    drop-shadow(0 0 10px rgba(142, 229, 209, 0.22))
-    drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22));
+    drop-shadow(0 0 16px rgba(142, 229, 209, 0.38))
+    drop-shadow(0 10px 22px rgba(0, 0, 0, 0.32));
+}
+
+.button:hover .button-icon,
+.card:hover .png-icon,
+.help-group:hover .png-icon,
+.support-card:hover .png-icon {
+  filter:
+    drop-shadow(0 0 22px rgba(142, 229, 209, 0.48))
+    drop-shadow(0 14px 28px rgba(0, 0, 0, 0.36));
 }
 
 .icon-hero {
@@ -817,6 +826,24 @@ p {
 
 .download-card {
   gap: 14px;
+}
+
+.download-card-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 4px;
+}
+
+.download-card-head .card-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0;
+}
+
+.download-card-head .icon-card {
+  width: 60px;
+  height: 60px;
 }
 
 .download-card .button {
