@@ -75,25 +75,21 @@ img {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 11px;
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 23px;
+  font-weight: 850;
   letter-spacing: 0;
-  text-shadow: 0 0 20px rgba(142, 229, 209, 0.12);
+  background: linear-gradient(135deg, #f4fffc 0%, #8ee5d1 48%, #49cbb4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 0 18px rgba(142, 229, 209, 0.2),
+    0 0 34px rgba(73, 203, 180, 0.12);
 }
 
-.logo-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  color: var(--accent);
-  font-size: 22px;
+.logo-text {
+  display: block;
   line-height: 1;
-  text-shadow:
-    0 0 14px rgba(142, 229, 209, 0.34),
-    0 0 34px rgba(142, 229, 209, 0.18);
 }
 
 .nav-links {
@@ -232,17 +228,10 @@ p {
 
 .button-icon {
   flex: 0 0 auto;
-  width: 24px;
-  height: 24px;
-  overflow: visible;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 0;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  filter:
-    drop-shadow(0 4px 7px rgba(0, 0, 0, 0.22))
-    drop-shadow(0 0 4px rgba(142, 229, 209, 0.1));
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
 }
 
 .hero-actions .button {
@@ -553,29 +542,21 @@ p {
   align-items: center;
   justify-content: center;
   color: var(--accent);
-  filter:
-    drop-shadow(0 10px 14px rgba(0, 0, 0, 0.24))
-    drop-shadow(0 0 5px rgba(142, 229, 209, 0.08));
 }
 
 .icon-tile {
   overflow: visible;
 }
 
-.premium-icon {
+.png-icon {
   display: block;
-}
-
-.icon-3d {
-  display: block;
-  overflow: visible;
-  color: var(--accent);
-  isolation: isolate;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .icon-hero {
-  width: 56px;
-  height: 56px;
+  width: 44px;
+  height: 44px;
 }
 
 .icon-card {
@@ -584,87 +565,13 @@ p {
 }
 
 .icon-button {
-  width: 24px;
-  height: 24px;
-}
-
-.ui-icon {
-  width: 28px;
-  height: 28px;
-  overflow: visible;
-  color: var(--accent);
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 0;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: 1;
-  filter:
-    drop-shadow(0 5px 7px rgba(0, 0, 0, 0.22))
-    drop-shadow(0 0 4px rgba(142, 229, 209, 0.1));
-}
-
-.ui-icon.icon-hero {
-  width: 56px;
-  height: 56px;
-  filter:
-    drop-shadow(0 9px 12px rgba(0, 0, 0, 0.24))
-    drop-shadow(0 0 5px rgba(142, 229, 209, 0.08));
-}
-
-.ui-icon.icon-card {
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
 }
 
 .button-icon.icon-button {
-  width: 24px;
-  height: 24px;
-}
-
-.icon-line {
-  color: var(--accent);
-}
-
-.button-icon .icon-stroke,
-.ui-icon .icon-stroke {
-  fill: none;
-  stroke: #dffcf6;
-  stroke-width: 1.9;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: 0.9;
-}
-
-.button-icon .icon-outline,
-.ui-icon .icon-outline {
-  opacity: 0.88;
-}
-
-.button-icon .icon-highlight,
-.ui-icon .icon-highlight {
-  fill: none;
-  stroke: #f4fffc;
-  stroke-width: 1.1;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: 0.48;
-}
-
-.button-icon .icon-glass,
-.ui-icon .icon-glass {
-  mix-blend-mode: screen;
-  opacity: 0.58;
-}
-
-.button-icon .icon-depth,
-.ui-icon .icon-depth {
-  opacity: 0.42;
-}
-
-.ui-icon .fill-mark {
-  fill: currentColor;
-  stroke: none;
+  width: 20px;
+  height: 20px;
 }
 
 .help-group-head p {
@@ -934,6 +841,11 @@ p {
 
 .quick-card h3 {
   margin-top: 2px;
+}
+
+.quick-card .icon-card {
+  width: 32px;
+  height: 32px;
 }
 
 .quick-card .card-meta {
@@ -1666,11 +1578,6 @@ body.lightbox-open {
   }
 
   .help-group-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .ui-icon.icon-hero {
     width: 50px;
     height: 50px;
   }
